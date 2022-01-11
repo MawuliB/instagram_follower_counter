@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 try:
-    user = "xbone_mawuli"
+    user = input("Enter The User Name: ")
     url = "https://www.instagram.com/" + user
     r = requests.get(url)
     soup = BeautifulSoup(r.content, "html.parser")
